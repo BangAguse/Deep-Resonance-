@@ -738,16 +738,75 @@
     // SEMUA LAGU DI FOLDER /music/
     // ===========================================
     const songs = [
-        { title: "Blinding Lights", artist: "The Weeknd", file: "blinding_lights.mp3" },
-        { title: "After Hours", artist: "The Weeknd", file: "after_hours.mp3" },
-        { title: "Cruel Summer", artist: "Taylor Swift", file: "cruel_summer.mp3" },
-        { title: "Flowers", artist: "Miley Cyrus", file: "flowers.mp3" },
-        { title: "What Was I Made For", artist: "Billie Eilish", file: "what_was_i_made_for.mp3" },
-        { title: "Vampire", artist: "Olivia Rodrigo", file: "vampire.mp3" },
-        { title: "Houdini", artist: "Dua Lipa", file: "houdini.mp3" }
+        { title: "3 Strikes", artist: "Unknown", file: "3 Strikes(M4A_128K).mp3" },
+        { title: "33x", artist: "Perunggu", file: "Perunggu - 33x (Video Lirik)(M4A_128K).mp3" },
+        { title: "ALAMAK", artist: "Unknown", file: "ALAMAK (Drift Style).mp3" },
+        { title: "ALAMAK", artist: "Unknown", file: "ALAMAK.mp3" },
+        { title: "Angel Echo", artist: "Unknown", file: "Angel Echo(M4A_128K).mp3" },
+        { title: "Beautiful", artist: "Bazzi feat. Camila Cabello", file: "Bazzi feat. Camila Cabello - Beautiful [Official Music Video](M4A_128K).mp3" },
+        { title: "Bergema sampai selamanya", artist: "Nadhif Basalamah", file: "Bergema sampai selamanya - Nadhif Basalamah.mp3" },
+        { title: "bismillahlinoahera", artist: "Unknown", file: "bismillahlinoahera.mp3" },
+        { title: "Bring Me To Life", artist: "Evanescence", file: "Evanescence - Bring Me To Life (Official HD Music Video)(M4A_128K).mp3" },
+        { title: "Cahaya Dewiku", artist: "Unknown", file: "Cahaya Dewiku.mp3" },
+        { title: "CLIMA LINDO", artist: "Unknown", file: "CLIMA LINDO (SLOWED)(M4A_128K).mp3" },
+        { title: "collide", artist: "Justine Skye", file: "Justine Skye - collide (solo version) __ sped up   reverb(M4A_128K).mp3" },
+        { title: "CONFESS YOUR LOVE FUNK", artist: "Unknown", file: "CONFESS YOUR LOVE FUNK (Best Version)(M4A_128K).mp3" },
+        { title: "Control", artist: "Unknown Brain x Rival", file: "Unknown Brain x Rival - Control (ft. Jex) [Lyric Video](M4A_128K).mp3" },
+        { title: "COOOK PARDON", artist: "LVBEL C5 & AKDO", file: "LVBEL C5_ AKDO - COOOK PARDON(M4A_128K).mp3" },
+        { title: "Diary Depresiku", artist: "Last Child", file: "Diary Depresiku - Last Child (Lirik)(M4A_128K).mp3" },
+        { title: "Discord", artist: "Eurobeat Brony", file: "Discord (Remix) - Eurobeat Brony(M4A_128K).mp3" },
+        { title: "FUNK ABNORMAL", artist: "Unknown", file: "FUNK ABNORMAL(M4A_128K).mp3" },
+        { title: "FUNK Jakarta Hari Ini", artist: "Kiky RMX", file: "FUNK Jakarta Hari Ini By Kiky RMX __ Viral Tiktok 2025(MP3_160K).mp3" },
+        { title: "Halu", artist: "Feby Putri", file: "Halu - Feby Putri (Official Lyric Video).mp3" },
+        { title: "HAUNTED", artist: "Chris Grey", file: "Chris Grey - HAUNTED (Official Lyric Video)(M4A_128K).mp3" },
+        { title: "Headlights", artist: "Alok & Alan Walker", file: "Alok _ Alan Walker - Headlights (feat. KIDDO) [Official Lyric Video](M4A_128K).mp3" },
+        { title: "HEAVENLY JUMPSTYLE", artist: "Unknown", file: "HEAVENLY JUMPSTYLE(M4A_128K).mp3" },
+        { title: "Hingga Tua Bersama", artist: "Rizky Febian", file: "Rizky Febian - Hingga Tua Bersama [Official Music Video](M4A_128K).mp3" },
+        { title: "I LOVE YOU SO JUMPSTYLE", artist: "Unknown", file: "𝙄 𝙇𝙊𝙑𝙀 𝙔𝙊𝙐 𝙎𝙊 𝙅𝙐𝙈𝙋𝙎𝙏𝙔𝙇𝙀 𝙎𝙇𝙊𝙒𝙀𝘿 𝘼𝙉𝘿 𝙍𝙀𝙑𝙀𝙍𝙗(MP3_160K).mp3" },
+        { title: "Just Pretend", artist: "BAD OMENS", file: "BAD OMENS - Just Pretend (Official Audio Stream)(M4A_128K).mp3" },
+        { title: "Kota Ini Tak Sama Tanpamu", artist: "Nadhif Basalamah", file: "Kota Ini Tak Sama Tanpamu - Nadhif Basalamah.mp3" },
+        { title: "Lagu Terakhir Untukmu", artist: "Last Child", file: "Last Child - Lagu Terakhir Untukmu (New Version) _ Official Lyric Video(M4A_128K).mp3" },
+        { title: "LET THE WORLD BURN", artist: "Unknown", file: "LET THE WORLD BURN (with G-Eazy _ Ari Abdul)  - Remix [Official Lyric Video](M4A_128K).mp3" },
+        { title: "LosT", artist: "Bring Me The Horizon", file: "Bring Me The Horizon - LosT (Lyric Video)(M4A_128K).mp3" },
+        { title: "LUA NA PRAÇA", artist: "Unknown", file: "LUA NA PRAÇA(M4A_128K).mp3" },
+        { title: "masih ada waktunya", artist: "Nadhif Basalamah", file: "Nadhif Basalamah - masih ada waktunya (Official Lyric Video)(M4A_128K)_1.mp3" },
+        { title: "Mati2an", artist: "Gub3rnur Band", file: "Gub3rnur Band - Mati2an (Official Music Video)(M4A_128K).mp3" },
+        { title: "MATUSHKA ULTRAFUNK", artist: "satirin", file: "satirin - MATUSHKA ULTRAFUNK (OUT ON SPOTIFY)(M4A_128K).mp3" },
+        { title: "Melangitkanmu", artist: "Ghea Indrawari", file: "Ghea Indrawari - Melangitkanmu (Official Lyric Video)(M4A_128K).mp3" },
+        { title: "Menantang Rasi Bintang", artist: "Unknown", file: "Menantang Rasi Bintang(M4A_128K).mp3" },
+        { title: "MONTAGEM ALQUIMIA", artist: "Unknown", file: "MONTAGEM ALQUIMIA - (Official Music Video)(M4A_128K).mp3" },
+        { title: "MONTAGEM DIREÇÃO", artist: "DJ FKU & FAROFINAT BEATS & DJ SAMIR", file: "MONTAGEM DIREÇÃO (Brazilian Funk   Phonk) - DJ FKU_ FAROFINAT BEATS_ DJ SAMIR(M4A_128K).mp3" },
+        { title: "MONTAGEM UNKNOWN", artist: "Unknown", file: "MONTAGEM UNKNOWN(M4A_128K).mp3" },
+        { title: "MONTAGEM XONADA", artist: "Unknown", file: "MONTAGEM XONADA(M4A_128K).mp3" },
+        { title: "Monokrom", artist: "Tulus", file: "Tulus - Monokrom (Instrumental)(M4A_128K).mp3" },
+        { title: "Negara Lucu", artist: "eńau", file: "eńau - Negara Lucu (Official Lyric Video)(MP3_160K).mp3" },
+        { title: "Noche Eterna", artist: "Unknown", file: "Noche Eterna (Slowed)(M4A_128K).mp3" },
+        { title: "Parano", artist: "frozy", file: "фрози (frozy) - Parano feat. DDB [Ultra Records](M4A_128K).mp3" },
+        { title: "renegade", artist: "aaryan shah", file: "aaryan shah - renegade (sped up)(M4A_128K).mp3" },
+        { title: "Rumah Ke Rumah", artist: "Hindia", file: "Hindia - Rumah Ke Rumah (​Official Lyric _ Commentary Video)(MP3_160K).mp3" },
+        { title: "Semoga Kamu Jelek", artist: "Ehlija & Jamet Circle", file: "Ehlija - Semoga Kamu Jelek _ Jamet Circle - Semoga Kamu Jelek (Lirik Video)(M4A_128K).mp3" },
+        { title: "Seventeen", artist: "Unknown", file: "Seventeen(M4A_128K).mp3" },
+        { title: "Shameless", artist: "Camila Cabello", file: "Camila Cabello - Shameless (Official Video)(M4A_128K).mp3" },
+        { title: "Sisa Rasa", artist: "Unknown", file: "Sisa Rasa(M4A_128K).mp3" },
+        { title: "Slow Motion", artist: "Marshmello & Jonas Brothers", file: "Marshmello_ Jonas Brothers - Slow Motion (Official Lyric Video)(MP3_160K).mp3" },
+        { title: "Still With You", artist: "BTS Jungkook", file: "BTS Jungkook (정국) _Still With You_ Lyrics(M4A_128K).mp3" },
+        { title: "swim", artist: "chase atlantic", file: "chase atlantic - swim (speed up)(M4A_128K).mp3" },
+        { title: "Tak Selalu Memiliki", artist: "Lyodra", file: "Lyodra – Tak Selalu Memiliki (Ipar Adalah Maut Original Soundtrack) (Official Music Video)(M4A_128K).mp3" },
+        { title: "Tafsir Mistik", artist: "The Panturas", file: "The Panturas - Tafsir Mistik (Official Lyric Video)(M4A_128K).mp3" },
+        { title: "Tanpa Hati", artist: "Kokoronashi", file: "Kokoronashi - Tanpa Hati.mp3" },
+        { title: "Terbang Bersamaku", artist: "Unknown", file: "Terbang Bersamaku(M4A_128K).mp3" },
+        { title: "Terlatih Patah Hati", artist: "Endank Soekamti", file: "Terlatih Patah Hati (feat. Endank Soekamti).mp3" },
+        { title: "Took Her To The O", artist: "Unknown", file: "Took Her To The O (Audiomack Fine Tuned Version)(M4A_128K)_1.mp3" },
+        { title: "TRIUMPH", artist: "Unknown", file: "TRIUMPH (Slowed)(M4A_128K).mp3" },
+        { title: "twerk it like miley", artist: "Unknown", file: "twerk it like miley - (sped up)(M4A_128K).mp3" },
+        { title: "Under The Influence", artist: "Chris Brown", file: "Chris Brown - Under The Influence (Audio)(M4A_128K).mp3" },
+        { title: "VOCE NA MIRA JUMPSTYLE", artist: "Unknown", file: "VOCE NA MIRA JUMPSTYLE(M4A_128K).mp3" },
+        { title: "Walk in the cold", artist: "Unknown", file: "Walk in the cold (Slowed)(M4A_128K).mp3" },
+        { title: "When I Dream Of You", artist: "Unknown", file: "When I Dream Of You (Slowed)(M4A_128K).mp3" },
+        { title: "YOUR YELLOW", artist: "JAMET CIRCLE", file: "(EhLija Official Soundtrack) JAMET CIRCLE - _YOUR YELLOW_ [Lyrics video](M4A_128K).mp3" }
     ];
 
-    const musicBase = "/music/";
+    const musicBase = "./music/";
     let currentIndex = 0;
     let isPlayerActive = false;
     let isPlaying = false;
@@ -788,26 +847,42 @@
 
     function initAudioContext() {
         if (!audioContext && isPlayerActive) {
-            audioContext = new (window.AudioContext || window.webkitAudioContext)();
-            analyserNode = audioContext.createAnalyser();
-            analyserNode.fftSize = 256;
+            try {
+                audioContext = new (window.AudioContext || window.webkitAudioContext)();
+                analyserNode = audioContext.createAnalyser();
+                analyserNode.fftSize = 256;
+                console.log('Audio context initialized');
+            } catch(e) {
+                console.error('Audio context init error:', e);
+            }
         }
     }
 
     function connectAudioToContext() {
-        if (!audioContext || !analyserNode || !audioElem) return;
+        if (!audioContext || !analyserNode || !audioElem) {
+            return;
+        }
         
         try {
+            // If already connected, don't reconnect
+            if (sourceNode && sourceNode.mediaElement === audioElem) {
+                return;
+            }
+            
+            // Disconnect old source if exists
             if (sourceNode) {
                 try {
                     sourceNode.disconnect();
                 } catch(e) {}
+                sourceNode = null;
             }
+            
+            // Create new source
             sourceNode = audioContext.createMediaElementSource(audioElem);
             sourceNode.connect(analyserNode);
             analyserNode.connect(audioContext.destination);
         } catch(e) {
-            console.log('Audio context connection issue:', e);
+            console.log('Connection error:', e.message);
         }
     }
 
@@ -830,7 +905,7 @@
                 cancelAnimationFrame(animationId);
                 animationId = null;
             }
-            if (vizBars.length) {
+            if (vizBars && vizBars.length) {
                 vizBars.forEach(bar => {
                     bar.style.height = '3px';
                     bar.classList.remove('active-viz');
@@ -839,39 +914,50 @@
             return;
         }
 
-        const dataArray = new Uint8Array(analyserNode.frequencyBinCount);
-        analyserNode.getByteFrequencyData(dataArray);
-        
-        const barCount = vizBars.length;
-        const step = Math.floor(dataArray.length / barCount);
-        
-        for (let i = 0; i < barCount; i++) {
-            let value = 0;
-            for (let j = 0; j < step; j++) {
-                const idx = i * step + j;
-                if (idx < dataArray.length) {
-                    value += dataArray[idx];
+        try {
+            const dataArray = new Uint8Array(analyserNode.frequencyBinCount);
+            analyserNode.getByteFrequencyData(dataArray);
+            
+            const barCount = vizBars.length;
+            if (!barCount) {
+                animationId = requestAnimationFrame(updateVisualizerRealtime);
+                return;
+            }
+            
+            const step = Math.floor(dataArray.length / barCount);
+            
+            for (let i = 0; i < barCount; i++) {
+                let value = 0;
+                for (let j = 0; j < step; j++) {
+                    const idx = i * step + j;
+                    if (idx < dataArray.length) {
+                        value += dataArray[idx];
+                    }
+                }
+                value = value / step;
+                
+                let height = (value / 255) * 60;
+                height = Math.max(3, Math.min(65, height));
+                
+                vizBars[i].style.height = height + 'px';
+                if (height > 15) {
+                    vizBars[i].classList.add('active-viz');
+                } else {
+                    vizBars[i].classList.remove('active-viz');
                 }
             }
-            value = value / step;
-            
-            let height = (value / 255) * 60;
-            height = Math.max(3, Math.min(65, height));
-            
-            vizBars[i].style.height = `${height}px`;
-            if (height > 15) {
-                vizBars[i].classList.add('active-viz');
-            } else {
-                vizBars[i].classList.remove('active-viz');
-            }
+        } catch(e) {
+            console.log('Visualizer error:', e.message);
         }
         
         animationId = requestAnimationFrame(updateVisualizerRealtime);
     }
 
     function startVisualizer() {
-        if (animationId) cancelAnimationFrame(animationId);
-        if (analyserNode && audioElem && !audioElem.paused) {
+        if (animationId) {
+            cancelAnimationFrame(animationId);
+        }
+        if (isPlayerActive && audioElem && !audioElem.paused && analyserNode) {
             updateVisualizerRealtime();
         }
     }
@@ -897,16 +983,62 @@
     }
 
     function updateProgress() {
-        if (audioElem && audioElem.duration) {
-            const percent = (audioElem.currentTime / audioElem.duration) * 100;
-            progressFilled.style.width = `${percent}%`;
-            currentTimeSpan.innerText = formatTime(audioElem.currentTime);
-            durationSpan.innerText = formatTime(audioElem.duration);
-        }
+        if (!audioElem || !audioElem.duration) return;
+        
+        const percent = (audioElem.currentTime / audioElem.duration) * 100;
+        if (progressFilled) progressFilled.style.width = percent + '%';
+        if (currentTimeSpan) currentTimeSpan.innerText = formatTime(audioElem.currentTime);
+        if (durationSpan) durationSpan.innerText = formatTime(audioElem.duration);
+    }
+
+    function setupAudioListeners(elem) {
+        elem.addEventListener('timeupdate', updateProgress);
+        elem.addEventListener('loadedmetadata', updateProgress);
+        elem.addEventListener('play', () => {
+            console.log('Audio playing event fired');
+            isPlaying = true;
+            updatePlayPauseUI();
+            
+            try {
+                if (audioContext && audioContext.state === 'suspended') {
+                    console.log('Resuming audio context');
+                    audioContext.resume().then(() => {
+                        connectAudioToContext();
+                        startVisualizer();
+                    }).catch(e => console.error('Resume error:', e));
+                } else if (audioContext) {
+                    console.log('Connecting audio to context');
+                    connectAudioToContext();
+                    startVisualizer();
+                }
+            } catch(e) {
+                console.error('Play setup error:', e);
+            }
+        });
+        elem.addEventListener('pause', () => {
+            console.log('Audio paused');
+            isPlaying = false;
+            updatePlayPauseUI();
+            stopVisualizer();
+        });
+        elem.addEventListener('error', (e) => {
+            console.error('Audio error event:', e.target.error.code, e.target.error.message);
+        });
+        elem.addEventListener('ended', nextTrack);
+        elem.addEventListener('canplay', updateProgress);
+        elem.addEventListener('loadstart', () => {
+            console.log('Loading started');
+        });
+        elem.addEventListener('canplaythrough', () => {
+            console.log('Can play through');
+        });
     }
 
     function loadSong(index) {
-        if (!songs.length) return;
+        if (!songs.length) {
+            console.error('Songs array is empty!');
+            return;
+        }
         
         let targetIndex = index;
         if (currentMode === "shuffle" && shuffleQueue.length) {
@@ -918,27 +1050,36 @@
         currentIndex = targetIndex;
         
         const song = songs[currentIndex];
+        console.log('Loading song:', currentIndex, song.title);
         
         if (audioElem) {
-            audioElem.pause();
-            if (sourceNode) {
-                try {
-                    sourceNode.disconnect();
-                } catch(e) {}
-                sourceNode = null;
-            }
+            try {
+                audioElem.pause();
+                audioElem.src = '';
+            } catch(e) {}
         }
         
+        // Create new audio element fresh
         audioElem = new Audio();
-        audioElem.src = musicBase + song.file;
+        const filePath = musicBase + song.file;
+        console.log('File path:', filePath);
         
-        if (audioContext && audioContext.state === 'running') {
-            setTimeout(() => {
-                try {
-                    connectAudioToContext();
-                } catch(e) {}
-            }, 100);
+        audioElem.crossOrigin = 'anonymous';
+        audioElem.preload = 'auto';
+        
+        // Disconnect old source node
+        if (sourceNode) {
+            try {
+                sourceNode.disconnect();
+            } catch(e) {}
+            sourceNode = null;
         }
+        
+        // Setup listeners BEFORE setting src
+        setupAudioListeners(audioElem);
+        
+        // NOW set the source
+        audioElem.src = filePath;
         
         nowTitle.style.opacity = '0';
         nowArtist.style.opacity = '0';
@@ -947,61 +1088,53 @@
             nowArtist.innerText = song.artist;
             nowTitle.style.opacity = '1';
             nowArtist.style.opacity = '1';
-        }, 150);
+        }, 100);
         
-        audioElem.load();
         renderPlaylist();
         
-        audioElem.addEventListener('timeupdate', updateProgress);
-        audioElem.addEventListener('loadedmetadata', updateProgress);
-        audioElem.addEventListener('play', () => {
-            isPlaying = true;
-            updatePlayPauseUI();
-            if (audioContext && audioContext.state === 'suspended') {
-                audioContext.resume().then(() => {
-                    connectAudioToContext();
-                    startVisualizer();
-                });
-            } else {
-                startVisualizer();
-            }
-        });
-        audioElem.addEventListener('pause', () => {
-            isPlaying = false;
-            updatePlayPauseUI();
-            stopVisualizer();
-        });
-        audioElem.addEventListener('ended', () => {
-            nextTrack();
-        });
-        
+        // Auto-play after small delay
         if (isPlaying) {
-            audioElem.play().catch(e => console.log());
+            setTimeout(() => {
+                if (audioElem && audioElem.src) {
+                    console.log('Attempting to play:', audioElem.src);
+                    const playPromise = audioElem.play();
+                    if (playPromise !== undefined) {
+                        playPromise
+                            .then(() => console.log('Playback started'))
+                            .catch(error => {
+                                console.error('Play error:', error.name, error.message);
+                            });
+                    }
+                }
+            }, 200);
         }
     }
 
     function nextTrack() {
         if (currentMode === "repeat-one") {
-            if (audioElem) audioElem.currentTime = 0;
-            audioElem.play();
+            if (audioElem) {
+                audioElem.currentTime = 0;
+                audioElem.play().catch(e => console.log('Play error'));
+            }
             return;
         }
         
         let nextIndex = currentIndex + 1;
         if (nextIndex >= songs.length) {
-            if (currentMode === "repeat") nextIndex = 0;
-            else return;
+            nextIndex = (currentMode === "repeat") ? 0 : currentIndex;
         }
         
-        if (currentMode === "shuffle") {
+        if (currentMode === "shuffle" && shuffleQueue.length) {
             const currentShuffleIndex = shuffleQueue.indexOf(currentIndex);
             let nextShuffle = shuffleQueue[currentShuffleIndex + 1];
-            if (!nextShuffle && shuffleQueue.length) nextShuffle = shuffleQueue[0];
+            if (!nextShuffle && currentShuffleIndex >= 0) nextShuffle = shuffleQueue[0];
             nextIndex = nextShuffle !== undefined ? nextShuffle : 0;
         }
         
-        loadSong(nextIndex);
-        if (isPlaying) setTimeout(() => audioElem.play(), 100);
+        if (nextIndex !== currentIndex) {
+            isPlaying = true;
+            loadSong(nextIndex);
+        }
     }
 
     function prevTrack() {
@@ -1012,19 +1145,20 @@
         
         let prevIndex = currentIndex - 1;
         if (prevIndex < 0) {
-            if (currentMode === "repeat") prevIndex = songs.length - 1;
-            else return;
+            prevIndex = (currentMode === "repeat") ? songs.length - 1 : currentIndex;
         }
         
-        if (currentMode === "shuffle") {
+        if (currentMode === "shuffle" && shuffleQueue.length) {
             const currentShuffleIndex = shuffleQueue.indexOf(currentIndex);
             let prevShuffle = shuffleQueue[currentShuffleIndex - 1];
-            if (!prevShuffle && shuffleQueue.length) prevShuffle = shuffleQueue[shuffleQueue.length - 1];
+            if (!prevShuffle && currentShuffleIndex >= 0) prevShuffle = shuffleQueue[shuffleQueue.length - 1];
             prevIndex = prevShuffle !== undefined ? prevShuffle : songs.length - 1;
         }
         
-        loadSong(prevIndex);
-        if (isPlaying) setTimeout(() => audioElem.play(), 100);
+        if (prevIndex !== currentIndex) {
+            isPlaying = true;
+            loadSong(prevIndex);
+        }
     }
 
     function seekTo(e) {
@@ -1073,9 +1207,8 @@
                 ${idx === currentIndex ? '<div class="playing-badge">NOW PLAYING</div>' : ''}
             `;
             item.addEventListener('click', () => {
-                loadSong(idx);
                 isPlaying = true;
-                if (audioElem) audioElem.play();
+                loadSong(idx);
                 updatePlayPauseUI();
             });
             playlistContainer.appendChild(item);
@@ -1095,15 +1228,25 @@
     }
 
     function togglePlayPause() {
-        if (!audioElem) return;
+        if (!audioElem) {
+            isPlaying = true;
+            loadSong(0);
+            return;
+        }
+        
         if (isPlaying) {
             audioElem.pause();
-            isPlaying = false;
         } else {
-            audioElem.play().catch(e => console.log());
             isPlaying = true;
+            const playPromise = audioElem.play();
+            if (playPromise !== undefined) {
+                playPromise.catch(error => {
+                    console.log('Play error:', error.message);
+                    isPlaying = false;
+                    updatePlayPauseUI();
+                });
+            }
         }
-        updatePlayPauseUI();
     }
 
     function escapeHtml(str) {
@@ -1140,45 +1283,92 @@
         }
     }
 
+    let prevHoldStart = 0;
+    let nextHoldStart = 0;
+    let prevHoldTriggered = false;
+    let nextHoldTriggered = false;
+    const HOLD_TIME = 300; // ms
+
     function onPrevMouseDown() {
+        prevHoldStart = Date.now();
+        prevHoldTriggered = false;
         isHoldingPrev = true;
-        startSeek('prev');
+        
+        const holdCheck = () => {
+            if (isHoldingPrev && Date.now() - prevHoldStart > HOLD_TIME && !prevHoldTriggered) {
+                prevHoldTriggered = true;
+                startSeek('prev');
+            }
+            if (isHoldingPrev) {
+                seekHoldTimer = setTimeout(holdCheck, 50);
+            }
+        };
+        seekHoldTimer = setTimeout(holdCheck, HOLD_TIME);
     }
+    
     function onPrevMouseUp() {
         isHoldingPrev = false;
         if (seekHoldTimer) clearTimeout(seekHoldTimer);
+        
+        // Only trigger prevTrack if hold was < 300ms
+        if (!prevHoldTriggered && Date.now() - prevHoldStart < HOLD_TIME) {
+            prevTrack();
+        }
+        prevHoldTriggered = false;
     }
+    
     function onNextMouseDown() {
+        nextHoldStart = Date.now();
+        nextHoldTriggered = false;
         isHoldingNext = true;
-        startSeek('next');
+        
+        const holdCheck = () => {
+            if (isHoldingNext && Date.now() - nextHoldStart > HOLD_TIME && !nextHoldTriggered) {
+                nextHoldTriggered = true;
+                startSeek('next');
+            }
+            if (isHoldingNext) {
+                seekHoldTimer = setTimeout(holdCheck, 50);
+            }
+        };
+        seekHoldTimer = setTimeout(holdCheck, HOLD_TIME);
     }
+    
     function onNextMouseUp() {
         isHoldingNext = false;
         if (seekHoldTimer) clearTimeout(seekHoldTimer);
+        
+        // Only trigger nextTrack if hold was < 300ms
+        if (!nextHoldTriggered && Date.now() - nextHoldStart < HOLD_TIME) {
+            nextTrack();
+        }
+        nextHoldTriggered = false;
     }
 
-    async function startAutoTransition() {
+    function startAutoTransition() {
+        console.log('Starting auto transition');
         intro.classList.add('fade-out');
         startArea.classList.add('hide');
         
         setTimeout(() => {
+            console.log('Player section show');
             playerSection.classList.add('show');
             isPlayerActive = true;
             
-            initAudioContext();
-            createVisualizer();
+            try {
+                initAudioContext();
+                createVisualizer();
+                console.log('Audio context and visualizer ready');
+            } catch(e) {
+                console.error('Init error:', e);
+            }
+            
+            isPlaying = true;
+            console.log('Setting isPlaying = true, loading song 0');
             loadSong(0);
             
             document.body.addEventListener('touchstart', handleTouchStart);
             document.body.addEventListener('touchend', handleTouchEnd);
-            
-            setTimeout(() => {
-                if (audioContext) {
-                    audioContext.resume().then(() => {
-                        connectAudioToContext();
-                    });
-                }
-            }, 500);
         }, 600);
         
         setTimeout(() => {
@@ -1195,23 +1385,43 @@
         startAutoTransition();
     }, 4500);
 
+    console.log('Deep Resonance Initialized. Total songs:', songs.length);
+    console.log('Music base path:', musicBase);
+    console.log('First song:', songs[0]);
+
     playPauseBtn.addEventListener('click', togglePlayPause);
-    prevBtn.addEventListener('click', prevTrack);
-    nextBtn.addEventListener('click', nextTrack);
     
+    // Prev button - hold for seek, quick click for prev track
     prevBtn.addEventListener('mousedown', onPrevMouseDown);
     prevBtn.addEventListener('mouseup', onPrevMouseUp);
     prevBtn.addEventListener('mouseleave', onPrevMouseUp);
     prevBtn.addEventListener('touchstart', onPrevMouseDown);
     prevBtn.addEventListener('touchend', onPrevMouseUp);
     
+    // Next button - hold for seek, quick click for next track
     nextBtn.addEventListener('mousedown', onNextMouseDown);
     nextBtn.addEventListener('mouseup', onNextMouseUp);
     nextBtn.addEventListener('mouseleave', onNextMouseUp);
     nextBtn.addEventListener('touchstart', onNextMouseDown);
     nextBtn.addEventListener('touchend', onNextMouseUp);
     
-    if (progressBar) progressBar.addEventListener('click', seekTo);
+    if (progressBar) {
+        progressBar.addEventListener('click', seekTo);
+        // Tambah mouse move untuk drag progress bar
+        let isSeekingWithMouse = false;
+        progressBar.addEventListener('mousedown', (e) => {
+            isSeekingWithMouse = true;
+            seekTo(e);
+        });
+        document.addEventListener('mousemove', (e) => {
+            if (isSeekingWithMouse && audioElem && audioElem.duration) {
+                seekTo(e);
+            }
+        });
+        document.addEventListener('mouseup', () => {
+            isSeekingWithMouse = false;
+        });
+    }
     
     document.querySelectorAll('.mode-btn').forEach(btn => {
         btn.addEventListener('click', () => setMode(btn.dataset.mode));
